@@ -18,6 +18,9 @@ public class PumTest {
      */
     @Test
     public void testGerarSequencia() {
+        Pum pum = new Pum();
+        String experado = "1 2 3 PUM\n";
+        String result = pum.gerarSequencia(1);
+        assertEquals(experado, result);
     }
-    
 }

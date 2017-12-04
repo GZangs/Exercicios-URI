@@ -17,9 +17,18 @@ public class FibonacciTest {
      * Test of gerarFibonacci method, of class Fibonacci.
      */
     @Test
-    public void testGerarFibonacci() {
-        Fibonacci fibonacci = new Fibonacci();
+    public String gerarFibonacci(int numero){
+         String sequencia = null;
+        int n1 = 1, n2 = 0;
+        sequencia =+ n2 + " ";
+        sequencia =+ n1 + " ";
         
+            for(int j = 0; j < (numero-2); j++){
+                n1 = n1 + n2;
+                n2 = n1 - n2;
+                sequencia =+ n1 + " ";
+            }
+            return sequencia;
     }
     
 }

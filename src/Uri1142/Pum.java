@@ -8,16 +8,19 @@ package Uri1142;
 import java.util.Scanner;
 
 public class Pum {
-        public void gerarSequencia(int numero){
-        int cont = 0;
+        public String gerarSequencia(int numero){
+            StringBuilder builder = new StringBuilder();
+            int cont = 0;
             for(int j = 1; j <= (numero * 4); j++){
-                System.out.print(j+" ");
+                builder.append(j+" ");
+                //System.out.print(j+" ");
                 cont++;
                 if(cont == 3){
                     j++;
-                    System.out.println("PUM ");
+                    builder.append("PUM\n");
                     cont = 0;
                 }
             }
+            return builder.toString();
         }
 }
